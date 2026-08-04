@@ -35,6 +35,8 @@ Student-Hub Portal
 - Certificates
 - Announcements
 - Settings
+
+
 #navigation flow
 LOGIN -> DASHBAORD -> PROFILE -> ATTENDANCE AND TIMETABLE -> RESULTS -> FEE PORTAL -> CALENDER -> EVENT REGISTRATION -> CERTIFICATES -> ANNOUCEMENTS
 -> SETTINGS
