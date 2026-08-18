@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .slide
+        {
+            display:none;
+        }
+        .slide.active
+        {
+            display:block;
+        }
+    </style>
+    <div class="slide active">
+    <h1>
+        Mahek
+    </h1>
+    </div>
+    <div class="slide">
+        <h1>
+            HOLA!!!!!
+        </h1>
+    </div>
+
+        <div class="slide">
+        <h1>
+            AMIGOS!!!!!
+        </h1>
+    </div>
+    <button id="next">Next</button>
+    <button id="prev">Prev</button>
+
+    <script>
+        
+
+        var slides=document.querySelectorAll('.slide');
+        var currentindex=0;
+
+        document.getElementById('next').addEventListener("click" , function(){
+            slides[currentindex].classList.remove("active");
+            currentindex++;
+            if(currentindex==slides.length)
+        {
+            currentindex=0;
+        }
+            slides[currentindex].classList.add("active");
+
+
+
+        })
+    </script>
+</body>
+</html>

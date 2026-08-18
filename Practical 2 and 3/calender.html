@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - CHARUSAT Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <div class="search-wrapper">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">MAIN</div>
+
+            <a href="dashboardpage.html">▦ Dashboard</a>
+            <a href="profile.html">👤 Student Profile</a>
+            <a href="result.html">📊 Result</a>
+            <a href="attendance.html">📅 Attendance & Timetable</a>
+
+            <div class="menu-title">SERVICES</div>
+
+            <a href="feeportal.html">💰 Fee Portal</a>
+            <a href="annoucements.html">📢 Announcements</a>
+            <a href="calender.html" class="active">🗓 Calendar</a>
+            <a href="event.html">🎫 Event Registration</a>
+            <a href="ceritificate.html">📜 Certificate Viewer</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+            
+
+            <div class="menu-title">SETTINGS</div>
+
+            <a href="settings.html">⚙ Settings</a>
+
+        </nav>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="content calendar-page">
+
+            <!-- CALENDAR HEADER -->
+
+            <div class="calendar-header">
+
+                <div>
+                    <span class="calendar-label">ACADEMIC CALENDAR</span>
+                    <h2>August <span>2026</span></h2>
+                    <p>Keep track of your academic and campus activities.</p>
+                </div>
+
+                <div class="month-navigation">
+
+                    <a href="july.html">← July</a>
+
+                    <a href="september.html">September →</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR AREA -->
+
+            <div class="calendar-layout">
+
+
+                <!-- MAIN CALENDAR -->
+
+                <section class="calendar-main">
+
+                    <div class="calendar-weekdays">
+
+                        <div>SUN</div>
+                        <div>MON</div>
+                        <div>TUE</div>
+                        <div>WED</div>
+                        <div>THU</div>
+                        <div>FRI</div>
+                        <div>SAT</div>
+
+                    </div>
+
+
+                    <div class="calendar-grid">
+
+
+                        <!-- EMPTY -->
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+
+
+                        <!-- 1 -->
+                        <div class="calendar-day">
+                            <span class="day-number">1</span>
+                        </div>
+
+
+                        <!-- 2 -->
+                        <div class="calendar-day">
+                            <span class="day-number">2</span>
+                        </div>
+
+
+                        <!-- 3 -->
+                        <div class="calendar-day">
+                            <span class="day-number">3</span>
+                        </div>
+
+
+                        <!-- 4 -->
+                        <div class="calendar-day">
+                            <span class="day-number">4</span>
+                        </div>
+
+
+                        <!-- 5 -->
+                        <div class="calendar-day">
+                            <span class="day-number">5</span>
+                        </div>
+
+
+                        <!-- 6 -->
+                        <div class="calendar-day">
+                            <span class="day-number">6</span>
+                        </div>
+
+
+                        <!-- 7 -->
+                        <div class="calendar-day">
+                            <span class="day-number">7</span>
+                        </div>
+
+
+                        <!-- 8 -->
+                        <div class="calendar-day">
+                            <span class="day-number">8</span>
+                        </div>
+
+
+                        <!-- 9 -->
+                        <div class="calendar-day">
+                            <span class="day-number">9</span>
+                        </div>
+
+
+                        <!-- 10 -->
+                        <div class="calendar-day event-day hackathon">
+                            <span class="day-number">10</span>
+
+                            <div class="event-dot"></div>
+
+                            <span class="event-name">
+                                Hackathon
+                            </span>
+                        </div>
+
+
+                        <!-- 11 -->
+                        <div class="calendar-day">
+                            <span class="day-number">11</span>
+                        </div>
+
+
+                        <!-- 12 -->
+                        <div class="calendar-day">
+                            <span class="day-number">12</span>
+                        </div>
+
+
+                        <!-- 13 -->
+                        <div class="calendar-day event-day workshop">
+                            <span class="day-number">13</span>
+
+                            <div class="event-dot"></div>
+
+                            <span class="event-name">
+                                Workshop
+                            </span>
+                        </div>
+
+
+                        <!-- 14 -->
+                        <div class="calendar-day">
+                            <span class="day-number">14</span>
+                        </div>
+
+
+                        <!-- 15 -->
+                        <div class="calendar-day event-day holiday">
+                            <span class="day-number">15</span>
+
+                            <div class="event-dot"></div>
+
+                            <span class="event-name">
+                                Independence Day
+                            </span>
+                        </div>
+
+
+                        <!-- 16 -->
+                        <div class="calendar-day">
+                            <span class="day-number">16</span>
+                        </div>
+
+
+                        <!-- 17 -->
+                        <div class="calendar-day">
+                            <span class="day-number">17</span>
+                        </div>
+
+
+                        <!-- 18 -->
+                        <div class="calendar-day">
+                            <span class="day-number">18</span>
+                        </div>
+
+
+                        <!-- 19 -->
+                        <div class="calendar-day">
+                            <span class="day-number">19</span>
+                        </div>
+
+
+                        <!-- 20 -->
+                        <div class="calendar-day event-day seminar">
+                            <span class="day-number">20</span>
+
+                            <div class="event-dot"></div>
+
+                            <span class="event-name">
+                                Seminar
+                            </span>
+                        </div>
+
+
+                        <!-- 21 -->
+                        <div class="calendar-day">
+                            <span class="day-number">21</span>
+                        </div>
+
+
+                        <!-- 22 -->
+                        <div class="calendar-day event-day cultural">
+                            <span class="day-number">22</span>
+
+                            <div class="event-dot"></div>
+
+                            <span class="event-name">
+                                Cultural Fest
+                            </span>
+                        </div>
+
+
+                        <!-- 23 -->
+                        <div class="calendar-day">
+                            <span class="day-number">23</span>
+                        </div>
+
+
+                        <!-- 24 -->
+                        <div class="calendar-day">
+                            <span class="day-number">24</span>
+                        </div>
+
+
+                        <!-- 25 -->
+                        <div class="calendar-day">
+                            <span class="day-number">25</span>
+                        </div>
+
+
+                        <!-- 26 -->
+                        <div class="calendar-day">
+                            <span class="day-number">26</span>
+                        </div>
+
+
+                        <!-- 27 -->
+                        <div class="calendar-day">
+                            <span class="day-number">27</span>
+                        </div>
+
+
+                        <!-- 28 -->
+                        <div class="calendar-day">
+                            <span class="day-number">28</span>
+                        </div>
+
+
+                        <!-- 29 -->
+                        <div class="calendar-day">
+                            <span class="day-number">29</span>
+                        </div>
+
+
+                        <!-- 30 -->
+                        <div class="calendar-day">
+                            <span class="day-number">30</span>
+                        </div>
+
+
+                        <!-- 31 -->
+                        <div class="calendar-day">
+                            <span class="day-number">31</span>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- UPCOMING EVENTS -->
+
+                <aside class="upcoming-events">
+
+                    <div class="upcoming-heading">
+
+                        <span>UPCOMING</span>
+
+                        <h3>Important Dates</h3>
+
+                    </div>
+
+
+                    <div class="timeline">
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-date">
+                                <strong>10</strong>
+                                <span>AUG</span>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Hackathon</h4>
+                                <p>Annual coding event</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-date">
+                                <strong>13</strong>
+                                <span>AUG</span>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Workshop</h4>
+                                <p>Technical workshop</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-date">
+                                <strong>20</strong>
+                                <span>AUG</span>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Seminar</h4>
+                                <p>Academic seminar</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-item">
+
+                            <div class="timeline-date">
+                                <strong>22</strong>
+                                <span>AUG</span>
+                            </div>
+
+                            <div class="timeline-content">
+                                <h4>Cultural Fest</h4>
+                                <p>Campus cultural event</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- LEGEND -->
+
+                    <div class="calendar-legend">
+
+                        <h4>Event Types</h4>
+
+                        <div>
+                            <span class="legend-dot academic-dot"></span>
+                            Academic
+                        </div>
+
+                        <div>
+                            <span class="legend-dot event-dot-color"></span>
+                            Events
+                        </div>
+
+                        <div>
+                            <span class="legend-dot holiday-dot"></span>
+                            Holiday
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

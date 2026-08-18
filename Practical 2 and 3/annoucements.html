@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<!-- TOP BAR -->
+<header class="topbar">
+
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <div class="search-wrapper">
+        <input type="text" class="search-bar" placeholder="Search...">
+    </div>
+
+    <h1>CHARUSAT STUDENT PORTAL</h1>
+
+    <div class="topicons">
+        <span>💬</span>
+        <span>🔔</span>
+        <span class="profile-circle">M</span>
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+
+        <div class="logo">
+            🎓 CHARUSAT
+        </div>
+
+        <div class="menu-title">MAIN</div>
+
+        <a href="dashboardpage.html">▦ Dashboard</a>
+        <a href="profile.html">👤 Student Profile</a>
+        <a href="result.html">📊 Result</a>
+        <a href="attendance.html">📅 Attendance & Timetable</a>
+
+        <div class="menu-title">SERVICES</div>
+
+        <a href="feeportal.html">💰 Fee Portal</a>
+        <a href="annoucements.html" class="active">📢 Announcements</a>
+        <a href="calender.html">🗓 Calendar</a>
+        <a href="event.html">🎫 Event Registration</a>
+        <a href="ceritificate.html">📜 Certificate Viewer</a>
+                    <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+        <div class="menu-title">SETTINGS</div>
+
+        <a href="settings.html">⚙ Settings</a>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- PAGE HEADING -->
+        <div class="page-heading">
+
+            <div>
+                <h2>📢 Announcements</h2>
+                <p>Stay updated with the latest academic and campus information.</p>
+            </div>
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="announcement-filter">
+
+            <div class="filter-field">
+
+                <label>Announcement Type</label>
+
+                <select>
+                    <option>All</option>
+                    <option>Academic</option>
+                    <option>Events</option>
+                    <option>Examinations</option>
+                    <option>Placements</option>
+                    <option>Scholarships</option>
+                </select>
+
+            </div>
+
+            <button>Search</button>
+
+        </div>
+
+
+        <!-- ANNOUNCEMENTS -->
+
+        <section class="announcement-section">
+
+            <div class="section-heading">
+                <h3>Recent Announcements</h3>
+                <span>5 announcements</span>
+            </div>
+
+
+            <div class="announcement-board">
+
+                <!-- HEADER -->
+
+                <div class="announcement-table-header">
+
+                    <span>Announcement</span>
+                    <span>Category</span>
+                    <span>Date</span>
+                    <span>Status</span>
+                    <span></span>
+
+                </div>
+
+
+                <!-- ROW 1 -->
+
+                <div class="announcement-item academic-item">
+
+                    <div class="announcement-main">
+
+                        <strong>Web Development Assignment-2</strong>
+
+                        <p>
+                            Assignment-2 must be submitted before
+                            <b>10 August 2026</b>.
+                        </p>
+
+                    </div>
+
+                    <span class="announcement-category academic">
+                        Academic
+                    </span>
+
+                    <span class="announcement-date">
+                        10 Aug 2026
+                    </span>
+
+                    <span class="announcement-status important">
+                        Important
+                    </span>
+
+                    <button class="read-more">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- ROW 2 -->
+
+                <div class="announcement-item exam-item">
+
+                    <div class="announcement-main">
+
+                        <strong>Mid-Semester Examination</strong>
+
+                        <p>
+                            The Mid-Semester Examination timetable
+                            has been uploaded.
+                        </p>
+
+                    </div>
+
+                    <span class="announcement-category examination">
+                        Examination
+                    </span>
+
+                    <span class="announcement-date">
+                        09 Aug 2026
+                    </span>
+
+                    <span class="announcement-status updated">
+                        Updated
+                    </span>
+
+                    <button class="read-more">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- ROW 3 -->
+
+                <div class="announcement-item event-item">
+
+                    <div class="announcement-main">
+
+                        <strong>Annual Hackathon Registration</strong>
+
+                        <p>
+                            Registration for the Annual Hackathon
+                            is now open.
+                        </p>
+
+                    </div>
+
+                    <span class="announcement-category events">
+                        Event
+                    </span>
+
+                    <span class="announcement-date">
+                        08 Aug 2026
+                    </span>
+
+                    <span class="announcement-status open">
+                        Open
+                    </span>
+
+                    <button class="read-more">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- ROW 4 -->
+
+                <div class="announcement-item placement-item">
+
+                    <div class="announcement-main">
+
+                        <strong>Placement Drive</strong>
+
+                        <p>
+                            ABC Technologies will conduct a placement
+                            drive on <b>25 August 2026</b>.
+                        </p>
+
+                    </div>
+
+                    <span class="announcement-category placement">
+                        Placement
+                    </span>
+
+                    <span class="announcement-date">
+                        07 Aug 2026
+                    </span>
+
+                    <span class="announcement-status open">
+                        Open
+                    </span>
+
+                    <button class="read-more">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- ROW 5 -->
+
+                <div class="announcement-item scholarship-item">
+
+                    <div class="announcement-main">
+
+                        <strong>Scholarship Applications</strong>
+
+                        <p>
+                            Scholarship applications are open until
+                            <b>20 August 2026</b>.
+                        </p>
+
+                    </div>
+
+                    <span class="announcement-category scholarship">
+                        Scholarship
+                    </span>
+
+                    <span class="announcement-date">
+                        05 Aug 2026
+                    </span>
+
+                    <span class="announcement-status open">
+                        Open
+                    </span>
+
+                    <button class="read-more">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTE -->
+
+        <div class="announcement-note">
+
+            <strong>Note:</strong>
+            Please check the announcement board regularly for
+            important academic, examination and campus updates.
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
