@@ -1,3 +1,106 @@
+
+
+/*i want to create background image for the website */
+
+
+body{
+    margin:0;
+    min-height:100vh;
+    width:100%;
+    display:flex; /*arranges the items inside the parent*/
+    justify-content:center;/*is the flex thingy where the things inside th parent are aligned center this dosplay the thing int he middle but 
+    horizontally */
+    /*why do you need to align items again when you have already ised justify ccontent - places it in the middle vertically  */
+    align-items:center;
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
+
+/* Background Image */
+.background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(35%) blur(2px);
+    z-index:-1;
+}
+
+.loginbox
+{
+    width:320px;
+    max-width: 90%;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0px 0px 25px rgba(0,0,0,0.4);;
+    text-align:center;
+    background:rgba(252, 242, 242, 0.5);
+
+}
+
+@media (max-width: 600px) {
+    .loginbox {
+        padding: 25px;
+    }}
+
+/* Heading */
+h1{
+    color:#073860;
+    font-size:22px;
+}
+
+
+h2{
+    color:#f5f4f4;
+    font-size:24px;
+}
+/* Input Fields */
+input[type=text],
+input[type=password]{
+    width:90%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+
+}
+
+
+/* Buttons */
+input[type=submit],
+input[type=reset]{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+}
+
+.details
+{
+    font-size:18px;
+     position: relative;
+    right: 90px;
+   
+}
+input[type=submit]{
+    background:#003366;
+}
+
+input[type=reset]{
+    background:#888;
+}
+
+input[type=submit]:hover{
+    background:#0055aa;
+}
+
+input[type=reset]:hover{
+    background:#7a7373;
+}
+
 /* =====================================================
    RESET
 ===================================================== */
