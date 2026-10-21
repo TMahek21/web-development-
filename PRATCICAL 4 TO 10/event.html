@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="event-registration-page">
+
+    <!-- MENU TOGGLE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+            <a href="dashboardpage.html" class="active">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+              <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+        <!-- EVENT CONTENT -->
+        <main class="content event-registration-content">
+
+            <!-- PAGE INTRO -->
+            <section class="event-intro">
+
+                <div>
+                    <span class="event-eyebrow">
+                        CAMPUS ACTIVITIES
+                    </span>
+
+                    <h2>Register for an Event</h2>
+
+                    <p>
+                        Choose an upcoming event and register to
+                        participate in campus activities.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <a href="event.php" class="browse-events" style="background: #0284c7; color: white;">
+                        Live DB Portal ⚡
+                    </a>
+                    <button type="button" id="open-event-modal" class="browse-events" style="border: none; cursor: pointer; background: #003366; color: white;">
+                        View Event Details ℹ
+                    </button>
+                    <a href="vevents.html" class="browse-events">
+                        Browse Events →
+                    </a>
+                </div>
+
+            </section>
+
+
+            <!-- REGISTRATION AREA -->
+            <section class="event-registration-area">
+
+
+                <!-- FORM SIDE -->
+                <div class="registration-panel">
+
+                    <div class="registration-heading">
+
+                        <div>
+                            <span class="event-eyebrow">
+                                YOUR DETAILS
+                            </span>
+
+                            <h3>Event Registration</h3>
+                        </div>
+
+                        <span class="event-symbol">✦</span>
+
+                    </div>
+
+
+                    <div style="margin-bottom: 15px; padding: 10px 14px; background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 6px; font-size: 13px; color: #0369a1;">
+                        💡 Connected to MySQL 9.0 Database. You can also open the full dynamic portal at <a href="event.php" style="font-weight: 700; color: #003366; text-decoration: underline;">event.php →</a>
+                    </div>
+
+                    <form action="event.php" method="POST">
+                        <input type="hidden" name="student_id" value="1">
+
+                        <!-- NAME + ID -->
+                        <div class="event-form-row">
+
+                            <div class="event-form-group">
+
+                                <label>
+                                    Student Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    value="Mahek Tandel"
+                                    readonly
+                                >
+
+                            </div>
+
+
+                            <div class="event-form-group">
+
+                                <label>
+                                    Student ID
+                                </label>
+
+                                <input
+                                    type="text"
+                                    value="25DCE112"
+                                    readonly
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="event-form-group">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                value="25dce112@charusat.edu.in"
+                                readonly
+                            >
+
+                        </div>
+
+
+                        <!-- EVENT -->
+                        <div class="event-form-group">
+
+                            <label>
+                                Select Event
+                            </label>
+
+                            <select name="event_id">
+
+                                <option value="1">
+                                    Tech Fest / Hackathon 2026
+                                </option>
+
+                                <option value="2">
+                                    Technical Workshop on AI & ML
+                                </option>
+
+                                <option value="3">
+                                    Cultural Fest - Spandan
+                                </option>
+
+                                <option value="4">
+                                    Web Development Bootcamp
+                                </option>
+
+                                <option value="5">
+                                    Robotics League Championship
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PARTICIPATION -->
+                        <div class="event-form-group">
+
+                            <label>
+                                Participation Type
+                            </label>
+
+                            <div class="event-choice-row">
+
+                                <label class="event-choice">
+                                    <input
+                                        type="radio"
+                                        name="participation"
+                                        checked
+                                    >
+                                    Participant
+                                </label>
+
+                                <label class="event-choice">
+                                    <input
+                                        type="radio"
+                                        name="participation"
+                                    >
+                                    Volunteer
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+                        <div class="event-form-group">
+
+                            <label>
+                                Additional Message
+                            </label>
+
+                            <textarea
+                                rows="3"
+                                placeholder="Any special requirements or message..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- BUTTONS -->
+                        <div class="event-form-actions">
+
+                            <input
+                                type="submit"
+                                value="Confirm Registration"
+                                class="event-register-button"
+                                id="event-register-btn"
+                            >
+
+                            <input
+                                type="reset"
+                                value="Clear"
+                                class="event-clear-button"
+                            >
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- EVENT PREVIEW -->
+                <aside class="selected-event">
+
+                    <span class="selected-label">
+                        SELECTED EVENT
+                    </span>
+
+
+                    <div class="selected-date">
+
+                        <span>AUG</span>
+
+                        <strong>10</strong>
+
+                        <small>2026</small>
+
+                    </div>
+
+
+                    <span class="selected-category">
+                        TECHNICAL
+                    </span>
+
+
+                    <h3>
+                        Hackathon 2026
+                    </h3>
+
+
+                    <p>
+                        Put your coding and problem-solving skills
+                        to the test in the annual CHARUSAT Hackathon.
+                    </p>
+
+
+                    <div class="selected-details">
+
+                        <div>
+                            <span>TIME</span>
+                            <strong>9:00 AM</strong>
+                        </div>
+
+                        <div>
+                            <span>VENUE</span>
+                            <strong>Main Auditorium</strong>
+                        </div>
+
+                        <div>
+                            <span>ELIGIBILITY</span>
+                            <strong>All Students</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration-status">
+
+                        <span>REGISTRATION</span>
+
+                        <strong>OPEN</strong>
+
+                    </div>
+
+                </aside>
+
+            </section>
+
+
+            <!-- PARTICIPATION SECTION -->
+            <section class="event-participation">
+
+                <div class="participation-number">
+                    <strong>06</strong>
+                    <span>EVENTS</span>
+                </div>
+
+
+                <div class="participation-info">
+
+                    <span class="event-eyebrow">
+                        YOUR PARTICIPATION
+                    </span>
+
+                    <h3>
+                        You've participated in 6 events
+                    </h3>
+
+                    <p>
+                        Your campus activities are part of your
+                        co-curricular record.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="ceritificate.html"
+                    class="certificate-link"
+                >
+                    View Certificates →
+                </a>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+    <!-- EVENT DETAILS MODAL -->
+    <div id="event-modal" class="modal-overlay">
+        <div class="modal-box">
+            <span id="close-modal" class="modal-close">&times;</span>
+            <span class="event-eyebrow">CAMPUS EVENT DETAILS</span>
+            <h2>CHARUSAT Hackathon 2026</h2>
+            <p><strong>📅 Date:</strong> 10 August 2026</p>
+            <p><strong>⏰ Time:</strong> 9:00 AM - 5:00 PM</p>
+            <p><strong>📍 Venue:</strong> Main Auditorium, CHARUSAT Campus</p>
+            <p><strong>👥 Eligibility:</strong> Open for all engineering & IT students</p>
+            <p>Participate in the 24-hour coding competition, collaborate with peers, solve real-world problems, and win exciting prizes and certificates!</p>
+            <button id="modal-register-btn" class="event-register-button" style="margin-top: 15px; width: 100%; border: none; cursor: pointer;">Close Details</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

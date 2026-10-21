@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="faq-page">
+
+    <!-- MENU TOGGLE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">
+            ☰
+        </label>
+
+        <div class="search-wrapper">
+            <input type="text"
+                   class="search-bar"
+                   placeholder="Search...">
+        </div>
+
+        <h1>
+            CHARUSAT STUDENT PORTAL
+        </h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+            <a href="dashboardpage.html" class="active">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+
+        <!-- FAQ CONTENT -->
+        <main class="content faq-content">
+
+
+            <!-- INTRO -->
+            <section class="faq-intro">
+
+                <div>
+
+                    <span class="faq-eyebrow">
+                        STUDENT SUPPORT
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                    <p>
+                        Find quick answers to common questions about
+                        the Student Hub portal.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-mark">
+                    ?
+                </div>
+
+            </section>
+
+
+            <!-- SEARCH & SORT -->
+            <section class="faq-search">
+                <div>
+                    <span>SEARCH THE HELP CENTER</span>
+                    <h3>What can we help you with?</h3>
+                </div>
+
+                <div class="faq-search-sort-wrapper" style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
+                    <input
+                        type="text"
+                        id="faq-search-input"
+                        class="portal-input"
+                        placeholder="Search your question or keyword..."
+                        style="flex: 1;"
+                    >
+                    <select id="faq-sort-select" class="portal-select" style="min-width: 160px;">
+                        <option value="default">Default Order</option>
+                        <option value="asc">Question (A-Z)</option>
+                        <option value="desc">Question (Z-A)</option>
+                        <option value="category">Sort by Category</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- FAQ CATEGORIES -->
+            <div class="faq-category-row">
+                <span class="faq-category active" data-category="All">All Questions</span>
+                <span class="faq-category" data-category="Academics">Academics</span>
+                <span class="faq-category" data-category="Fees">Fees</span>
+                <span class="faq-category" data-category="Events">Events</span>
+                <span class="faq-category" data-category="Certificates">Certificates</span>
+                <span class="faq-category" data-category="General">General</span>
+            </div>
+
+            <!-- STATUS MESSAGES -->
+            <div id="faq-loading" class="portal-status-msg loading-msg">
+                ⏳ Loading FAQ data...
+            </div>
+            <div id="faq-error" class="portal-status-msg error-msg" style="display: none;">
+                ⚠️ Error loading FAQs from faqs.json.
+            </div>
+            <div id="faq-empty" class="portal-status-msg empty-msg" style="display: none;">
+                🔍 No FAQs found matching your search.
+            </div>
+
+            <!-- DYNAMIC QUESTIONS LIST -->
+            <section class="faq-list" id="faq-list-container">
+                <!-- Dynamically populated via Fetch API and faqs.json -->
+            </section>
+
+            <!-- PAGINATION -->
+            <div id="faq-pagination" class="portal-pagination">
+                <!-- Pagination controls -->
+            </div>
+
+
+            <!-- STILL NEED HELP -->
+            <section class="faq-help">
+
+                <div class="faq-help-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <span class="faq-eyebrow">
+                        STILL NEED HELP?
+                    </span>
+
+                    <h3>
+                        Couldn't find your answer?
+                    </h3>
+
+                    <p>
+                        Contact the faculty or Student Hub support
+                        team for further assistance.
+                    </p>
+
+                </div>
+
+                <a href="faculty.html">
+                    Contact Faculty →
+                </a>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

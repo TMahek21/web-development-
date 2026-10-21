@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - CHARUSAT Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU CHECKBOX -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <div class="search-wrapper">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="container">
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">MAIN</div>
+
+            <a href="dashboardpage.html">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html" class="active">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">SERVICES</div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+                        <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+            <div class="menu-title">SETTINGS</div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="content">
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <div>
+                    <h2>📊 Semester Result</h2>
+
+                    <p>
+                        View your semester grades, SGPA, CGPA and academic performance.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- ================= STUDENT SUMMARY ================= -->
+
+            <div class="result-student-card">
+
+                <div>
+
+                    <h3>Mahek Tandel</h3>
+
+                    <p>Student ID: <strong>25DCE112</strong></p>
+
+                    <p>
+                        B.Tech Computer Engineering
+                    </p>
+
+                </div>
+
+                <div class="semester-badge">
+                    Semester 3
+                </div>
+
+            </div>
+
+
+            <!-- ================= RESULT INFORMATION ================= -->
+
+            <div class="details-box">
+
+                <div class="section-heading">
+                    <h3>Result Information</h3>
+                </div>
+
+                <div class="result-info-grid">
+
+                    <div class="result-info-item">
+                        <small>Examination</small>
+                        <strong>Semester 3 Examination</strong>
+                    </div>
+
+                    <div class="result-info-item">
+                        <small>Result Date</small>
+                        <strong>11 August 2026</strong>
+                    </div>
+
+                    <div class="result-info-item">
+                        <small>Total Credits</small>
+                        <strong>20</strong>
+                    </div>
+
+                    <div class="result-info-item">
+                        <small>Result Status</small>
+                        <strong class="status-good">Passed</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SUBJECT RESULTS ================= -->
+
+            <div class="details-box">
+
+                <div class="section-heading">
+
+                    <h3>Subject-wise Grades</h3>
+
+                    <a href="#">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table class="results-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Subject</th>
+                                <th>Credits</th>
+                                <th>Grade</th>
+                                <th>Grade Point</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>Data Structures</strong>
+                                </td>
+
+                                <td>4</td>
+
+                                <td>
+                                    <span class="grade-badge grade-a">
+                                        A
+                                    </span>
+                                </td>
+
+                                <td>8</td>
+
+                                <td>
+                                    <span class="result-status passed">
+                                        Passed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Object Oriented Programming</strong>
+                                </td>
+
+                                <td>4</td>
+
+                                <td>
+                                    <span class="grade-badge grade-a-plus">
+                                        A+
+                                    </span>
+                                </td>
+
+                                <td>9</td>
+
+                                <td>
+                                    <span class="result-status passed">
+                                        Passed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Computer Networks</strong>
+                                </td>
+
+                                <td>4</td>
+
+                                <td>
+                                    <span class="grade-badge grade-a">
+                                        A
+                                    </span>
+                                </td>
+
+                                <td>8</td>
+
+                                <td>
+                                    <span class="result-status passed">
+                                        Passed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Web Development</strong>
+                                </td>
+
+                                <td>4</td>
+
+                                <td>
+                                    <span class="grade-badge grade-a">
+                                        A
+                                    </span>
+                                </td>
+
+                                <td>8</td>
+
+                                <td>
+                                    <span class="result-status passed">
+                                        Passed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Mathematics</strong>
+                                </td>
+
+                                <td>4</td>
+
+                                <td>
+                                    <span class="grade-badge grade-a-plus">
+                                        A+
+                                    </span>
+                                </td>
+
+                                <td>9</td>
+
+                                <td>
+                                    <span class="result-status passed">
+                                        Passed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PERFORMANCE CARDS ================= -->
+
+            <div class="section-heading result-heading">
+
+                <h3>Performance Summary</h3>
+
+            </div>
+
+
+            <div class="result-stats">
+
+                <div class="result-stat-card">
+
+                    <span>SGPA</span>
+
+                    <strong>8.75</strong>
+
+                    <small>This Semester</small>
+
+                </div>
+
+
+                <div class="result-stat-card">
+
+                    <span>CGPA</span>
+
+                    <strong>8.42</strong>
+
+                    <small>Overall</small>
+
+                </div>
+
+
+                <div class="result-stat-card">
+
+                    <span>Total Credits</span>
+
+                    <strong>20</strong>
+
+                    <small>Semester Credits</small>
+
+                </div>
+
+
+                <div class="result-stat-card">
+
+                    <span>Status</span>
+
+                    <strong class="status-good">
+                        Pass
+                    </strong>
+
+                    <small>All Subjects Cleared</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= OVERALL PERFORMANCE ================= -->
+
+            <div class="details-box">
+
+                <div class="section-heading">
+                    <h3>Overall Performance</h3>
+                </div>
+
+
+                <div class="performance-content">
+
+                    <div class="performance-item">
+
+                        <span>
+                            Academic Performance
+                        </span>
+
+                        <strong>
+                            Very Good
+                        </strong>
+
+                    </div>
+
+
+                    <div class="performance-item">
+
+                        <span>
+                            Subjects Passed
+                        </span>
+
+                        <strong>
+                            5 / 5
+                        </strong>
+
+                    </div>
+
+
+                    <div class="performance-item">
+
+                        <span>
+                            Backlogs
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+         
+
+           <!-- RESULT ACTIONS -->
+<div class="result-options">
+
+    <div class="result-option">
+        <div class="option-icon">📄</div>
+
+        <div class="option-content">
+            <h3>View Question Paper</h3>
+            <p>View the question paper for your semester examination.</p>
+        </div>
+
+        <a href="questionpaper.html" class="option-btn">
+            View Paper
+        </a>
+    </div>
+
+
+    <div class="result-option">
+        <div class="option-icon">📝</div>
+
+        <div class="option-content">
+            <h3>Request / Query</h3>
+            <p>Raise a request if you want to review or query your result.</p>
+        </div>
+
+        <a href="resultrequest.html" class="option-btn">
+            Raise Request
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

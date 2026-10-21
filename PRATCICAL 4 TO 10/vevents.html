@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Upcoming Events - Student Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body class="vevents-page">
+
+
+    <!-- SIDEBAR TOGGLE -->
+
+    <input type="checkbox" id="menu-toggle">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">
+            ☰
+        </label>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+
+            <span>💬</span>
+
+            <span>🔔</span>
+
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+
+            <span class="profile-circle">
+                M
+            </span>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+            <a href="dashboardpage.html" class="active">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+
+        <!-- CONTENT -->
+
+        <main class="content view-events-content">
+
+
+            <!-- HEADER -->
+
+            <div class="events-hero">
+
+                <div>
+
+                    <span class="page-label">
+                        CAMPUS CALENDAR
+                    </span>
+
+                    <h2>What's happening?</h2>
+
+                    <p>
+                        Explore upcoming activities, workshops,
+                        competitions and cultural events.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="event.html"
+                    class="create-registration"
+                >
+                    + Register for an Event
+                </a>
+
+            </div>
+
+
+            <!-- SEARCH & FILTERS BAR -->
+            <div class="event-search-sort-bar">
+                <input type="text" id="event-search-input" class="portal-input" placeholder="🔍 Search events by name or details...">
+                <select id="event-sort-select" class="portal-select">
+                    <option value="default">Sort by Default</option>
+                    <option value="title-asc">Title (A to Z)</option>
+                    <option value="title-desc">Title (Z to A)</option>
+                    <option value="date-asc">Date (Earliest First)</option>
+                </select>
+            </div>
+
+            <div class="event-filter-bar">
+                <span>SHOWING</span>
+                <button class="event-cat-btn filter-active" data-category="All">All Events</button>
+                <button class="event-cat-btn" data-category="Technical">Technical</button>
+                <button class="event-cat-btn" data-category="Workshop">Workshop</button>
+                <button class="event-cat-btn" data-category="Cultural">Cultural</button>
+                <button class="event-cat-btn" data-category="Sports">Sports</button>
+                <button class="event-cat-btn" data-category="Academic">Academic</button>
+            </div>
+
+            <!-- STATUS MESSAGES -->
+            <div id="events-loading" class="portal-status-msg loading-msg">
+                ⏳ Loading events...
+            </div>
+            <div id="events-error" class="portal-status-msg error-msg" style="display: none;">
+                ⚠️ Error loading events data from events.json.
+            </div>
+            <div id="events-empty" class="portal-status-msg empty-msg" style="display: none;">
+                🔍 No events found matching your search or category filter.
+            </div>
+
+            <!-- DYNAMIC EVENTS BOARD -->
+            <section class="event-board" id="events-container">
+                <!-- Dynamically populated via Fetch API and events.json -->
+            </section>
+
+            <!-- PAGINATION -->
+            <div id="events-pagination" class="portal-pagination">
+                <!-- Pagination controls -->
+            </div>
+
+
+            <!-- PARTICIPATION -->
+
+            <section class="my-participation">
+
+                <div class="participation-number">
+
+                    <strong>06</strong>
+
+                    <span>
+                        EVENTS
+                    </span>
+
+                </div>
+
+
+                <div class="participation-text">
+
+                    <span class="page-label">
+                        YOUR PARTICIPATION
+                    </span>
+
+                    <h3>
+                        You've participated in 6 events
+                    </h3>
+
+                    <p>
+                        Keep participating in campus activities
+                        and build your co-curricular record.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="ceritificate.html"
+                    class="participation-link"
+                >
+                    View Certificates →
+                </a>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

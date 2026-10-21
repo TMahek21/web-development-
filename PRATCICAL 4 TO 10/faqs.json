@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "question": "How can I check my attendance?",
+    "answer": "Open the Attendance & Timetable section from the sidebar to view your subject-wise attendance percentage and daily schedule.",
+    "category": "Academics"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "question": "Where can I view my semester result?",
+    "answer": "Select Result from the sidebar to view your semester grades, SGPA, CGPA, backlogs (if any), and overall academic transcript.",
+    "category": "Academics"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "question": "How can I pay my semester fees online?",
+    "answer": "Go to the Fee Portal from the main menu to inspect your outstanding fee breakdown and complete payment using debit card, UPI, or net banking.",
+    "category": "Fees"
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "question": "How do I register for a campus event?",
+    "answer": "Open Event Registration from the sidebar, select an available event from the list, fill in your details, and click Confirm Registration.",
+    "category": "Events"
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "question": "Where can I download my participation certificates?",
+    "answer": "Navigate to the Certificate Viewer page in the sidebar. You can view, verify, and download PDF copies of all your verified event certificates.",
+    "category": "Certificates"
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "question": "What is the minimum attendance requirement for exams?",
+    "answer": "CHARUSAT guidelines mandate a minimum of 80% aggregate attendance across all courses to be eligible for end-semester term examinations.",
+    "category": "Academics"
+  },
+  {
+    "id": 7,
+    "number": "07",
+    "question": "How can I request a Fee Payment Receipt?",
+    "answer": "After paying your fees via the Fee Portal, click on 'Download Receipt' next to the transaction history table to instantly get an official PDF receipt.",
+    "category": "Fees"
+  },
+  {
+    "id": 8,
+    "number": "08",
+    "question": "Who can participate in the annual Hackathon?",
+    "answer": "All undergraduate and postgraduate students from CHARUSAT (DEPSTAR, CSPIT, RPCP, CMPICA) are eligible to register individually or as a team.",
+    "category": "Events"
+  },
+  {
+    "id": 9,
+    "number": "09",
+    "question": "How are SGPA and CGPA calculated?",
+    "answer": "SGPA is calculated by dividing total quality points earned by total course credits in a semester. CGPA is the weighted average of all SGPAs across semesters.",
+    "category": "Academics"
+  },
+  {
+    "id": 10,
+    "number": "10",
+    "question": "How do I update my profile contact information?",
+    "answer": "Go to Student Profile from the sidebar, edit the respective fields under Contact Details or Personal Details, and click 'Save Changes'.",
+    "category": "General"
+  },
+  {
+    "id": 11,
+    "number": "11",
+    "question": "What should I do if I am unable to access the portal?",
+    "answer": "Try resetting your password from the login screen or contact the CHARUSAT IT Helpdesk at support@charusat.ac.in with your Student ID.",
+    "category": "General"
+  },
+  {
+    "id": 12,
+    "number": "12",
+    "question": "Are event certificates valid for co-curricular activity points?",
+    "answer": "Yes, certificates issued via the portal are digitally signed and accredited for your CHARUSAT activity points and resume portfolio.",
+    "category": "Certificates"
+  },
+  {
+    "id": 13,
+    "number": "13",
+    "question": "Can I apply for hostel accommodation through the portal?",
+    "answer": "Yes, hostel application forms and room allotment status updates are available under the Accommodation section of your Student Profile.",
+    "category": "General"
+  },
+  {
+    "id": 14,
+    "number": "14",
+    "question": "What happens if I miss a fee payment deadline?",
+    "answer": "Late fee charges may apply according to university norms. You will receive SMS and email notifications prior to the deadline date.",
+    "category": "Fees"
+  },
+  {
+    "id": 15,
+    "number": "15",
+    "question": "How can I volunteer for upcoming college workshops?",
+    "answer": "When filling out the Event Registration form, select 'Volunteer' under Participation Type to register as a student organizer.",
+    "category": "Events"
+  },
+  {
+    "id": 16,
+    "number": "16",
+    "question": "How do I apply for a duplicate ID card or bonafide certificate?",
+    "answer": "Submit a request under the Certificate Viewer page by choosing 'Apply for New Document' and attaching the required verification documents.",
+    "category": "Certificates"
+  }
+]

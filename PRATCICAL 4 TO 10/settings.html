@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHARUSAT Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU CHECKBOX -->
+    <input type="checkbox" id="menu-toggle">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">
+            ☰
+        </label>
+
+        <div class="search-wrapper">
+            <input type="text"
+                   class="search-bar"
+                   placeholder="Search...">
+        </div>
+
+        <h1>
+            CHARUSAT STUDENT PORTAL
+        </h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+            <a href="dashboardpage.html" class="active">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="settings-page">
+
+        <div class="settings-heading">
+
+            <div>
+                <span class="settings-label">ACCOUNT CONTROL</span>
+                <h2>Settings</h2>
+                <p>Manage your portal preferences and account information.</p>
+            </div>
+
+        </div>
+
+
+        <form>
+
+
+            <!-- APPEARANCE -->
+            <section class="setting-section appearance-section">
+
+                <div class="setting-icon">🎨</div>
+
+                <div class="setting-content">
+
+                    <h3>Appearance</h3>
+
+                    <p>Choose how the Student Portal looks on your device.</p>
+
+                    <div class="theme-options">
+
+                        <label class="theme-option">
+                            <input type="radio" name="theme" id="theme-light-radio" value="light" checked>
+                            <span>
+                                <strong>Light Mode</strong>
+                                <small>Clean and bright interface</small>
+                            </span>
+                        </label>
+
+                        <label class="theme-option">
+                            <input type="radio" name="theme" id="theme-dark-radio" value="dark">
+                            <span>
+                                <strong>Dark Mode</strong>
+                                <small>Dark interface for low-light use</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATIONS -->
+            <section class="setting-section">
+
+                <div class="setting-icon">🔔</div>
+
+                <div class="setting-content">
+
+                    <h3>Notification Settings</h3>
+
+                    <p>Choose which notifications you want to receive.</p>
+
+                    <div class="notification-list">
+
+                        <label>
+                            <span>
+                                <strong>Assignment Notifications</strong>
+                                <small>Get notified about assignment deadlines.</small>
+                            </span>
+
+                            <input type="checkbox" checked>
+                        </label>
+
+
+                        <label>
+                            <span>
+                                <strong>Event Notifications</strong>
+                                <small>Receive updates about upcoming events.</small>
+                            </span>
+
+                            <input type="checkbox" checked>
+                        </label>
+
+
+                        <label>
+                            <span>
+                                <strong>Exam Notifications</strong>
+                                <small>Get important examination updates.</small>
+                            </span>
+
+                            <input type="checkbox" checked>
+                        </label>
+
+
+                        <label>
+                            <span>
+                                <strong>Placement Notifications</strong>
+                                <small>Receive placement drive announcements.</small>
+                            </span>
+
+                            <input type="checkbox">
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACCOUNT -->
+            <section class="setting-section account-section">
+
+                <div class="setting-icon">👤</div>
+
+                <div class="setting-content">
+
+                    <h3>Account Information</h3>
+
+                    <p>Update your personal account details.</p>
+
+
+                    <div class="account-grid">
+
+                        <div class="input-group">
+
+                            <label>Name</label>
+
+                            <input type="text" value="Mahek Tandel">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Email</label>
+
+                            <input type="email" value="mahek@example.com">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Phone Number</label>
+
+                            <input type="text" value="9876543210">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>Change Password</label>
+
+                            <input type="password" placeholder="Enter new password">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- LANGUAGE -->
+            <section class="setting-section language-section">
+
+                <div class="setting-icon">🌐</div>
+
+                <div class="setting-content">
+
+                    <h3>Language</h3>
+
+                    <p>Select your preferred portal language.</p>
+
+                    <select>
+
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Gujarati</option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACCOUNT SESSION / LOGOUT -->
+            <section class="setting-section logout-section">
+
+                <div class="setting-icon">🚪</div>
+
+                <div class="setting-content">
+
+                    <h3>Account Session</h3>
+
+                    <p>Log out of your account to end your session safely.</p>
+
+                    <button type="button" id="logout-btn" class="logout-btn">
+                        Logout
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- BUTTONS -->
+            <div class="settings-actions">
+
+                <input type="reset" value="Reset">
+
+                <input type="submit" value="Save Changes" id="settings-save-btn">
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

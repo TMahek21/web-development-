@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <div class="search-wrapper">
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">MAIN</div>
+
+            <a href="dashboardpage.html">▦ Dashboard</a>
+            <a href="profile.html">👤 Student Profile</a>
+            <a href="result.html">📊 Result</a>
+            <a href="attendance.html">📅 Attendance & Timetable</a>
+
+            <div class="menu-title">SERVICES</div>
+
+            <a href="feeportal.html" class="active">💰 Fee Portal</a>
+            <a href="annoucements.html">📢 Announcements</a>
+            <a href="calender.html">🗓 Calendar</a>
+            <a href="event.html">🎫 Event Registration</a>
+            <a href="ceritificate.html">📜 Certificate Viewer</a>
+                        <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+            <div class="menu-title">SETTINGS</div>
+
+            <a href="settings.html">⚙ Settings</a>
+
+        </nav>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+
+            <!-- PAGE HEADING -->
+            <div class="page-heading">
+
+                <div>
+                    <h2>Fee Portal</h2>
+                    <p>Manage your semester fees and payment details.</p>
+                </div>
+
+            </div>
+
+
+            <!-- FEE SERVICES -->
+
+            <div class="section-title">
+                <h3>Fee Services</h3>
+            </div>
+
+
+            <div class="fee-options">
+
+
+                <!-- PAY FEES -->
+
+                <div class="fee-card pay-card">
+
+                    <div class="fee-icon pay-icon">
+                        💳
+                    </div>
+
+                    <div class="fee-card-content">
+                        <h3>Pay Fees</h3>
+
+                        <p>
+                            Make your semester fee payment
+                            securely online.
+                        </p>
+                    </div>
+
+                    <button class="fee-btn pay-btn">
+                        Pay Now
+                    </button>
+
+                </div>
+
+
+                <!-- PAID FEES -->
+
+                <div class="fee-card paid-card">
+
+                    <div class="fee-icon paid-icon">
+                        ✓
+                    </div>
+
+                    <div class="fee-card-content">
+
+                        <h3>Paid Fees</h3>
+
+                        <p>
+                            View your previous and completed
+                            fee payments.
+                        </p>
+
+                    </div>
+
+                    <button class="fee-btn">
+                        View
+                    </button>
+
+                </div>
+
+
+                <!-- DUE DATE -->
+
+                <div class="fee-card due-card">
+
+                    <div class="fee-icon due-icon">
+                        📅
+                    </div>
+
+                    <div class="fee-card-content">
+
+                        <h3>Due Date</h3>
+
+                        <p>
+                            Last date for the current semester
+                            fee payment.
+                        </p>
+
+                    </div>
+
+                    <div class="due-date">
+                        25 Aug 2026
+                    </div>
+
+                </div>
+
+
+                <!-- FEE STRUCTURE -->
+
+                <div class="fee-card structure-card">
+
+                    <div class="fee-icon structure-icon">
+                        📄
+                    </div>
+
+                    <div class="fee-card-content">
+
+                        <h3>Fee Structure</h3>
+
+                        <p>
+                            View the complete semester-wise
+                            fee structure.
+                        </p>
+
+                    </div>
+
+                    <button class="fee-btn">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAYMENT HISTORY -->
+
+            <div class="fee-section">
+
+                <div class="section-heading">
+
+                    <h3>Payment History</h3>
+
+                    <a href="#">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="payment-board">
+
+                    <!-- HEADER -->
+
+                    <div class="payment-header">
+
+                        <span>Transaction ID</span>
+                        <span>Date</span>
+                        <span>Amount</span>
+                        <span>Payment Mode</span>
+                        <span>Status</span>
+                        <span>Receipt</span>
+
+                    </div>
+
+
+                    <!-- PAYMENT 1 -->
+
+                    <div class="payment-row">
+
+                        <span>
+                            TXN20260801
+                        </span>
+
+                        <span>
+                            01 Aug 2026
+                        </span>
+
+                        <span>
+                            ₹30,000
+                        </span>
+
+                        <span>
+                            UPI
+                        </span>
+
+                        <span>
+                            <b class="payment-status">
+                                Paid
+                            </b>
+                        </span>
+
+                        <span class="receipt-actions">
+
+                            <button class="view-receipt">
+                                View
+                            </button>
+
+                            <button class="download-receipt">
+                                ↓
+                            </button>
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- PAYMENT 2 -->
+
+                    <div class="payment-row">
+
+                        <span>
+                            TXN20250715
+                        </span>
+
+                        <span>
+                            15 Jul 2025
+                        </span>
+
+                        <span>
+                            ₹45,000
+                        </span>
+
+                        <span>
+                            Net Banking
+                        </span>
+
+                        <span>
+                            <b class="payment-status">
+                                Paid
+                            </b>
+                        </span>
+
+                        <span class="receipt-actions">
+
+                            <button class="view-receipt">
+                                View
+                            </button>
+
+                            <button class="download-receipt">
+                                ↓
+                            </button>
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- PAYMENT 3 -->
+
+                    <div class="payment-row">
+
+                        <span>
+                            TXN20250120
+                        </span>
+
+                        <span>
+                            20 Jan 2025
+                        </span>
+
+                        <span>
+                            ₹40,000
+                        </span>
+
+                        <span>
+                            UPI
+                        </span>
+
+                        <span>
+                            <b class="payment-status">
+                                Paid
+                            </b>
+                        </span>
+
+                        <span class="receipt-actions">
+
+                            <button class="view-receipt">
+                                View
+                            </button>
+
+                            <button class="download-receipt">
+                                ↓
+                            </button>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAYMENT METHODS -->
+
+            <div class="details-box">
+
+                <h3>Available Payment Methods</h3>
+
+                <div class="payment-methods">
+
+                    <div class="method">
+                        💳
+                        <span>Credit Card</span>
+                    </div>
+
+                    <div class="method">
+                        💳
+                        <span>Debit Card</span>
+                    </div>
+
+                    <div class="method">
+                        🏦
+                        <span>Net Banking</span>
+                    </div>
+
+                    <div class="method">
+                        📱
+                        <span>UPI</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTE -->
+
+            <div class="fee-note">
+
+                <strong>Important:</strong>
+
+                Please complete your fee payment before
+                the mentioned due date to avoid late payment
+                charges.
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

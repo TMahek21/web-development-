@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHARUSAT Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU CHECKBOX -->
+    <input type="checkbox" id="menu-toggle">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">
+            ☰
+        </label>
+
+        <div class="search-wrapper">
+            <input type="text"
+                   class="search-bar"
+                   placeholder="Search...">
+        </div>
+
+        <h1>
+            CHARUSAT STUDENT PORTAL
+        </h1>
+
+        <div class="topicons">
+            <span>💬</span>
+            <span>🔔</span>
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+            <span class="profile-circle">M</span>
+        </div>
+
+    </header>
+
+
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+            <a href="dashboardpage.html" class="active">
+                ▦ Dashboard
+            </a>
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="content">
+
+            <!-- NOTIFICATION BANNER -->
+            <div class="notification-banner" id="dashboard-notification">
+                <div class="notification-content">
+                    📢 <strong>Announcement:</strong> Mid-Semester examination timetable is now available! Check the announcements section for details.
+                </div>
+                <button id="close-notification" class="notification-close-btn" title="Close Notification">&times;</button>
+            </div>
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <div>
+                    <h2>
+                        👋 Welcome back, Mahek!
+                    </h2>
+
+                    <p>
+                        Here's what's happening in your student portal today.
+                    </p>
+                </div>
+
+
+                <div class="semester">
+
+                    <small>
+                        Semester
+                    </small>
+
+                    <strong>
+                        2 of 8
+                    </strong>
+
+                    <div class="progress">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= WELCOME BOX ================= -->
+
+            <div class="welcome-box">
+
+                <div class="welcome-text">
+
+                    <h2>
+                        Stay Updated with CHARUSAT
+                    </h2>
+
+                    <p>
+                        Keep track of your attendance, assignments,
+                        examinations, announcements and important
+                        academic activities all in one place.
+                    </p>
+
+                    <a href="annoucements.html"
+                       class="learn-btn">
+
+                        View Announcements →
+
+                    </a>
+
+                </div>
+
+
+                <div class="welcome-icon">
+                    🎓
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= OVERVIEW ================= -->
+
+            <div class="section-title">
+                <h3>
+                    Overview
+                </h3>
+            </div>
+
+
+            <div class="stats-row">
+
+
+                <div class="stat-box attendance-card">
+
+                    <div class="stat-title">
+                        Attendance
+                    </div>
+
+                    <div class="stat-value">
+                        89%
+                    </div>
+
+                    <div class="stat-small">
+                        Good attendance
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-box assignment-card">
+
+                    <div class="stat-title">
+                        Assignments
+                    </div>
+
+                    <div class="stat-value">
+                        3
+                    </div>
+
+                    <div class="stat-small">
+                        Pending assignments
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-box exam-card">
+
+                    <div class="stat-title">
+                        Next Exam
+                    </div>
+
+                    <div class="stat-value">
+                        10 Aug
+                    </div>
+
+                    <div class="stat-small">
+                        Web Development
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-box message-card">
+
+                    <div class="stat-title">
+                        Messages
+                    </div>
+
+                    <div class="stat-value">
+                        2
+                    </div>
+
+                    <div class="stat-small">
+                        New messages
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= LOWER SECTION ================= -->
+
+            <div class="dashboard-bottom">
+
+
+                <!-- ANNOUNCEMENTS -->
+
+                <section class="announcement-section">
+
+                    <div class="section-heading">
+
+                        <h3>
+                            📢 Recent Announcements
+                        </h3>
+
+                        <a href="annoucements.html">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+                    <div class="announcement-board">
+
+
+                        <div class="announcement-header">
+
+                            <span>
+                                Announcement
+                            </span>
+
+                            <span>
+                                Date
+                            </span>
+
+                            <span>
+                                Status
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="announcement-row">
+
+                            <div>
+
+                                <strong>
+                                    Assignment Submission
+                                </strong>
+
+                                <p>
+                                    Assignment submission deadline is Friday.
+                                </p>
+
+                            </div>
+
+                            <span>
+                                11 Aug 2026
+                            </span>
+
+                            <span class="status important">
+                                Important
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="announcement-row">
+
+                            <div>
+
+                                <strong>
+                                    Workshop Registration
+                                </strong>
+
+                                <p>
+                                    Registration for the upcoming workshop is open.
+                                </p>
+
+                            </div>
+
+                            <span>
+                                10 Aug 2026
+                            </span>
+
+                            <span class="status open">
+                                Open
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="announcement-row">
+
+                            <div>
+
+                                <strong>
+                                    Semester Timetable
+                                </strong>
+
+                                <p>
+                                    The semester timetable has been updated.
+                                </p>
+
+                            </div>
+
+                            <span>
+                                08 Aug 2026
+                            </span>
+
+                            <span class="status updated">
+                                Updated
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="announcement-row">
+
+                            <div>
+
+                                <strong>
+                                    Student Council
+                                </strong>
+
+                                <p>
+                                    Applications for student council are now available.
+                                </p>
+
+                            </div>
+
+                            <span>
+                                05 Aug 2026
+                            </span>
+
+                            <span class="status open">
+                                Open
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <section class="quick-section">
+
+                    <div class="section-heading">
+
+                        <h3>
+                            🔗 Quick Links
+                        </h3>
+
+                        <a href="#">
+                            View all →
+                        </a>
+
+                    </div>
+
+
+
+                    <a href="profile.html"
+                       class="quick-card">
+
+                        <div class="quick-icon">
+                            👤
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Student Profile
+                            </strong>
+
+                            <p>
+                                View and edit your profile
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="attendance.html"
+                       class="quick-card">
+
+                        <div class="quick-icon">
+                            📅
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Attendance
+                            </strong>
+
+                            <p>
+                                Check your attendance
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="result.html"
+                       class="quick-card">
+
+                        <div class="quick-icon">
+                            📊
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Results
+                            </strong>
+
+                            <p>
+                                View your academic results
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="calender.html"
+                       class="quick-card">
+
+                        <div class="quick-icon">
+                            🗓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Calendar
+                            </strong>
+
+                            <p>
+                                Check upcoming events
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+
+                    <a href="feeportal.html"
+                       class="quick-card">
+
+                        <div class="quick-icon">
+                            💰
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fee Portal
+                            </strong>
+
+                            <p>
+                                View your fee details
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Timetable - CHARUSAT Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- MENU TOGGLE -->
+
+    <input type="checkbox" id="menu-toggle">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+
+        <div class="search-wrapper">
+
+            <input
+                type="text"
+                class="search-bar"
+                placeholder="Search..."
+            >
+
+        </div>
+
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+
+        <div class="topicons">
+
+            <span>💬</span>
+
+            <span>🔔</span>
+
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+
+            <span class="profile-circle">M</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= CONTAINER ================= -->
+
+    <div class="container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+
+            <div class="logo">
+                🎓 CHARUSAT
+            </div>
+
+
+            <div class="menu-title">
+                MAIN
+            </div>
+
+
+            <a href="dashboardpage.html">
+                ▦ Dashboard
+            </a>
+
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+
+            <a href="attendance.html">
+                📅 Attendance & Timetable
+            </a>
+
+
+
+            <div class="menu-title">
+                SERVICES
+            </div>
+
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+
+            <a href="ceritificate.html">
+                📜 Certificate Viewer
+            </a>
+                      <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+
+            <div class="menu-title">
+                SETTINGS
+            </div>
+
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="content">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h2>📅 Weekly Timetable</h2>
+
+                    <p>
+                        View your weekly class schedule and lecture timings.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= TIMETABLE INFORMATION ================= -->
+
+            <div class="timetable-info">
+
+
+                <div>
+
+                    <span>Current Semester</span>
+
+                    <strong>Semester 3</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Academic Year</span>
+
+                    <strong>2026–27</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Working Days</span>
+
+                    <strong>Monday – Friday</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Class Timing</span>
+
+                    <strong>9:00 AM – 2:00 PM</strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= TIMETABLE ================= -->
+
+            <div class="details-box timetable-box">
+
+
+                <div class="section-heading">
+
+                    <h3>Class Schedule</h3>
+
+                    <span class="timetable-note">
+                        Semester 3
+                    </span>
+
+                </div>
+
+
+                <div class="timetable-wrapper">
+
+
+                    <table class="timetable">
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Day</th>
+
+                                <th>9:00 - 10:00</th>
+
+                                <th>10:00 - 11:00</th>
+
+                                <th>11:15 - 12:15</th>
+
+                                <th>1:00 - 2:00</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- MONDAY -->
+
+                            <tr>
+
+                                <td class="day">
+                                    Monday
+                                </td>
+
+                                <td>
+                                    <span class="subject dsa">
+                                        DSA
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject oop">
+                                        OOP
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject web">
+                                        Web Development
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject cn">
+                                        Computer Networks
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- TUESDAY -->
+
+                            <tr>
+
+                                <td class="day">
+                                    Tuesday
+                                </td>
+
+                                <td>
+                                    <span class="subject web">
+                                        Web Development
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject dsa">
+                                        DSA
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject cn">
+                                        Computer Networks
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject oop">
+                                        OOP
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- WEDNESDAY -->
+
+                            <tr>
+
+                                <td class="day">
+                                    Wednesday
+                                </td>
+
+                                <td>
+                                    <span class="subject oop">
+                                        OOP
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject cn">
+                                        Computer Networks
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject dsa">
+                                        DSA
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject web">
+                                        Web Development
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- THURSDAY -->
+
+                            <tr>
+
+                                <td class="day">
+                                    Thursday
+                                </td>
+
+                                <td>
+                                    <span class="subject cn">
+                                        Computer Networks
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject web">
+                                        Web Development
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject oop">
+                                        OOP
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject dsa">
+                                        DSA
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- FRIDAY -->
+
+                            <tr>
+
+                                <td class="day">
+                                    Friday
+                                </td>
+
+                                <td>
+                                    <span class="subject dsa">
+                                        DSA
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject web">
+                                        Web Development
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject cn">
+                                        Computer Networks
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="subject oop">
+                                        OOP
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= TODAY'S CLASSES ================= -->
+
+            <div class="details-box">
+
+
+                <div class="section-heading">
+
+                    <h3>Today's Classes</h3>
+
+                </div>
+
+
+                <div class="today-classes">
+
+
+                    <div class="today-class">
+
+                        <div class="class-time">
+                            9:00 - 10:00
+                        </div>
+
+                        <div>
+                            <strong>DSA</strong>
+
+                            <p>
+                                Lecture
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="today-class">
+
+                        <div class="class-time">
+                            10:00 - 11:00
+                        </div>
+
+                        <div>
+                            <strong>OOP</strong>
+
+                            <p>
+                                Lecture
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="today-class">
+
+                        <div class="class-time">
+                            11:15 - 12:15
+                        </div>
+
+                        <div>
+                            <strong>Web Development</strong>
+
+                            <p>
+                                Lecture
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="today-class">
+
+                        <div class="class-time">
+                            1:00 - 2:00
+                        </div>
+
+                        <div>
+                            <strong>Computer Networks</strong>
+
+                            <p>
+                                Lecture
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= NOTE ================= -->
+
+            <div class="timetable-footer">
+
+                <strong>Note:</strong>
+
+                Timetable is subject to change according to
+                university and department requirements.
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

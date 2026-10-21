@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .FAQ-answer
+    {
+        display:none;
+    }
+    .show{
+        display:block;
+    }
+</style>
+
+<body>
+    <div class="FAQ">
+
+        <button class="FAQ-question">
+            What is this portal for?
+        </button>
+        <div class="FAQ-answer">
+            It is a portal for student
+        </div>
+            <button class="FAQ-question">
+            What is my name?
+        </button>
+        <div class="FAQ-answer">
+            My name is Mahek
+        </div>
+            <button class="FAQ-question">
+            How are you doing ?
+        </button>
+        <div class="FAQ-answer">
+            Excellent!
+        </div>
+    </div>
+ <script>
+    var btns=document.querySelectorAll('.FAQ-question');
+    var ans=document.querySelectorAll('.FAQ-answer');
+
+    btns.forEach(function(btn)
+    {
+
+    btn.addEventListener("click" , function()
+    {   var result=btn.nextElementSibling;
+        result.classList.toggle("show");// this adds or remove the class  
+    })
+})
+    // console.log(FAQ-answer);
+</script>   
+</body>
+</html>

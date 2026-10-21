@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHARUSAT Student Portal - Attendance</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= MENU TOGGLE ================= -->
+
+    <input type="checkbox" id="menu-toggle">
+
+
+    <!-- ================= TOP BAR ================= -->
+
+    <header class="topbar">
+
+        <label for="menu-toggle" class="menu-btn">☰</label>
+
+        <div class="search-wrapper">
+            <input
+                type="text"
+                class="search-bar"
+                placeholder="Search..."
+            >
+        </div>
+
+        <h1>CHARUSAT STUDENT PORTAL</h1>
+
+        <div class="topicons">
+
+            <span>💬</span>
+
+            <span>🔔</span>
+
+            <span id="theme-toggle" class="theme-btn" title="Toggle Theme">🌙</span>
+
+            <span class="profile-circle">M</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN CONTAINER ================= -->
+
+    <div class="container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <nav class="sidebar">
+
+            <div class="menu-title">MAIN</div>
+
+
+            <a href="dashboardpage.html">
+                ▦ Dashboard
+            </a>
+
+
+            <a href="profile.html">
+                👤 Student Profile
+            </a>
+
+
+            <a href="result.html">
+                📊 Result
+            </a>
+
+
+            <a href="attendance.html" class="active">
+                📅 Attendance & Timetable
+            </a>
+
+
+
+            <div class="menu-title">SERVICES</div>
+
+
+            <a href="feeportal.html">
+                💰 Fee Portal
+            </a>
+
+
+            <a href="annoucements.html">
+                📢 Announcements
+            </a>
+
+
+            <a href="calender.html">
+                🗓 Calendar
+            </a>
+
+
+            <a href="event.html">
+                🎫 Event Registration
+            </a>
+
+
+            <a href="ceritifcate.html">
+                📜 Certificate Viewer
+            </a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">About Us</a>
+            <a href="faculty.html">Meet Faculty</a>
+
+
+
+            <div class="menu-title">SETTINGS</div>
+
+
+            <a href="settings.html">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <main class="content">
+
+
+            <!-- ================= PAGE HEADING ================= -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <h2>Attendance & Timetable</h2>
+
+                    <p>
+                        Track your attendance and view your weekly class schedule.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ATTENDANCE OVERVIEW ================= -->
+
+            <div class="section-title">
+
+                <h3>Attendance Overview</h3>
+
+            </div>
+
+
+            <div class="attendance-overview">
+
+
+                <!-- OVERALL -->
+
+                <div class="attendance-main-card">
+
+                    <div class="attendance-card-title">
+                        Overall Attendance
+                    </div>
+
+                    <div class="attendance-percentage">
+                        89%
+                    </div>
+
+                    <div class="attendance-progress">
+
+                        <div class="attendance-progress-fill"></div>
+
+                    </div>
+
+                    <p>
+                        Your attendance is currently in good standing.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PRESENT -->
+
+                <div class="attendance-info-card">
+
+                    <span>Classes Attended</span>
+
+                    <strong>94</strong>
+
+                    <small>
+                        Classes attended
+                    </small>
+
+                </div>
+
+
+
+                <!-- ABSENT -->
+
+                <div class="attendance-info-card">
+
+                    <span>Classes Missed</span>
+
+                    <strong>13</strong>
+
+                    <small>
+                        Classes missed
+                    </small>
+
+                </div>
+
+
+
+                <!-- TOTAL -->
+
+                <div class="attendance-info-card">
+
+                    <span>Total Classes</span>
+
+                    <strong>107</strong>
+
+                    <small>
+                        Classes conducted
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SUBJECT ATTENDANCE ================= -->
+
+            <div class="section-heading">
+
+                <h3>Subject-wise Attendance</h3>
+
+            </div>
+
+
+            <div class="attendance-table">
+
+
+                <!-- TABLE HEADER -->
+
+                <div class="attendance-table-header">
+
+                    <span>Subject</span>
+
+                    <span>Attended</span>
+
+                    <span>Total</span>
+
+                    <span>Attendance</span>
+
+                    <span>Status</span>
+
+                </div>
+
+
+
+                <!-- WEB DEVELOPMENT -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Web Development
+                    </span>
+
+                    <span>
+                        18
+                    </span>
+
+                    <span>
+                        20
+                    </span>
+
+                    <span>
+                        90%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+
+
+                <!-- WEB DEVELOPMENT LAB -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Web Development Lab
+                    </span>
+
+                    <span>
+                        4
+                    </span>
+
+                    <span>
+                        5
+                    </span>
+
+                    <span>
+                        80%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+
+
+                <!-- COMPUTER NETWORKS -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Computer Networks
+                    </span>
+
+                    <span>
+                        17
+                    </span>
+
+                    <span>
+                        20
+                    </span>
+
+                    <span>
+                        85%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+
+
+                <!-- CN LAB -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Computer Networks Lab
+                    </span>
+
+                    <span>
+                        6
+                    </span>
+
+                    <span>
+                        6
+                    </span>
+
+                    <span>
+                        100%
+                    </span>
+
+                    <span class="attendance-status excellent">
+                        Excellent
+                    </span>
+
+                </div>
+
+
+
+                <!-- DSA -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Data Structures & Algorithms
+                    </span>
+
+                    <span>
+                        19
+                    </span>
+
+                    <span>
+                        20
+                    </span>
+
+                    <span>
+                        95%
+                    </span>
+
+                    <span class="attendance-status excellent">
+                        Excellent
+                    </span>
+
+                </div>
+
+
+
+                <!-- DSA LAB -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        DSA Lab
+                    </span>
+
+                    <span>
+                        7
+                    </span>
+
+                    <span>
+                        8
+                    </span>
+
+                    <span>
+                        88%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+
+
+                <!-- OOP -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        Object Oriented Programming
+                    </span>
+
+                    <span>
+                        16
+                    </span>
+
+                    <span>
+                        20
+                    </span>
+
+                    <span>
+                        80%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+
+
+                <!-- OOP LAB -->
+
+                <div class="attendance-row">
+
+                    <span>
+                        OOP Lab
+                    </span>
+
+                    <span>
+                        7
+                    </span>
+
+                    <span>
+                        8
+                    </span>
+
+                    <span>
+                        88%
+                    </span>
+
+                    <span class="attendance-status good">
+                        Good
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ACTION BUTTONS ================= -->
+
+            <div class="attendance-actions">
+
+                <a href="timtable.html" class="attendance-btn primary">
+                    📅 View Timetable
+                </a>
+
+                <button class="attendance-btn secondary">
+                    📊 Attendance Summary
+                </button>
+
+                <button class="attendance-btn secondary">
+                    📝 Request Leave
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= SUMMARY ================= -->
+
+            <div class="section-heading">
+
+                <h3>Attendance Summary</h3>
+
+            </div>
+
+
+            <div class="summary-box">
+
+
+                <div class="summary-item">
+
+                    <span>Total Classes</span>
+
+                    <strong>107</strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>Classes Attended</span>
+
+                    <strong>94</strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>Classes Missed</span>
+
+                    <strong>13</strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>Overall Attendance</span>
+
+                    <strong>89%</strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ADDITIONAL INFORMATION ================= -->
+
+            <div class="attendance-info-box">
+
+                <div>
+
+                    <strong>Last Updated</strong>
+
+                    <p>
+                        Attendance records were last updated on
+                        11 August 2026.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <strong>Attendance Requirement</strong>
+
+                    <p>
+                        Students are required to maintain the minimum
+                        attendance percentage according to university rules.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= QUICK TIMETABLE LINK ================= -->
+
+            <div class="timetable-link-box">
+
+                <div>
+
+                    <h3>Need to check your schedule?</h3>
+
+                    <p>
+                        View your complete weekly timetable including
+                        classes, labs and room numbers.
+                    </p>
+
+                </div>
+
+
+                <a href="timtable.html">
+                    View Timetable →
+                </a>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
